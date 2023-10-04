@@ -1,0 +1,33 @@
+.info {
+  margin-bottom: 150px;
+  &__inner {
+    display: flex;
+  }
+  &__img {
+    margin-right: 60px;
+    flex-basis: 570px;
+    object-fit: cover;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 490px;
+  }
+  &__item + .info__item {
+    padding-top: 50px;
+  }
+  &__item-title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-transform: uppercase;
+  }
+  &__item-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px; /* 16.8px */
+  }
+}

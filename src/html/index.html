@@ -4,12 +4,21 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Стартовый шаблон</title>
+		<title>E-bike Xiaomi</title>
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
 		@@include('blocks/header.html')
+		<main>
+			@@include('blocks/bike.html')
+			@@include('blocks/info.html')
+			@@include('blocks/specifications.html')
+			@@include('blocks/slider.html')
+			@@include('blocks/price.html')
+		</main>
 		@@include('blocks/footer.html')
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="./js/slick.min.js"></script>
 		<script src="./js/index.bundle.js"></script>
 	</body>
 </html>

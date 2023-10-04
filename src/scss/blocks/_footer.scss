@@ -1,8 +1,44 @@
 .footer {
-	background-color: rgb(62, 62, 62);
-	padding: 50px 0;
+	background-color: var(--page-bg-dark);
+	padding: 25px 0;
 	font-size: 32px;
-    color: #fff;
+  color: #fff;
+
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__link {
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-transform: lowercase;
+	}
+
+	&__social-link + .footer__social-link{
+		padding-left: 28px;
+	}
+
+	&__contacts {
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-transform: lowercase;
+	}
+	&__phone{
+		margin-bottom: 10px;
+	}
+	&__contacts-img{
+		margin-right: 10px;
+	}
+	&__contacts-link{
+		display: inline-block;
+		padding-top: 2px;
+	}
 
 	h1 {
 		font-size: 32px;

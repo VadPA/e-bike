@@ -1,20 +1,28 @@
-:root {
-	--container-width: 1200px;
-	--container-padding: 15px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+// font-family: 'Inter', sans-serif;
 
-	--font-main: 'Poppins', sans-serif;
-	--font-accent: 'Playfair Display', serif;
+:root {
+	--container-width: 1240px;
+	--container-padding: 20px;
+
+	--font-main: 'Inter', sans-serif;
+	--font-size: 14px;
+	--line-height: 17px;
+	--font-weight: 400;
 
 	--page-bg: #fff;
-	--text-color: #000;
-	--accent: #ac182c;
+	--page-bg-dark: #131313;
+	--text-color: #131313;
+	--text-color-muted: #6F6F6F;
+	--text-color-hover: #fff;
+	--accent: #FF4040;
 
-    --laptop-size: 1199px;
+  --laptop-size: 1199px;
 	--tablet-size: 959px;
 	--mobile-size: 599px;
 }
 
 .dark {
-    --page-bg: #252526;
+    --page-bg: #131313;
     --text-color: #fff;
 }

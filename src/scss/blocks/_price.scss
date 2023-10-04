@@ -1,0 +1,128 @@
+.price {
+  margin-bottom: 100px;
+
+  &__inner {
+    position: relative;
+    display: flex;
+    gap: 150px;
+  }
+}
+
+
+.form {
+  width: 420px;
+  &__title {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  &__text {
+    margin-bottom: 29px;
+    width: 298px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px;
+  }
+  &__input-name,
+  &__input-phone {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color: var(--text-color-muted);
+    border-bottom: 1px solid var(--page-bg-dark);
+  }
+
+  &__input-name::placeholder,
+  &__input-phone::placeholder {
+    opacity: 0.5;
+  }
+  &__input-text {
+    margin-bottom: 10px;
+    color: var(--text-color-muted);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px;
+    opacity: 0.5;
+  }
+}
+
+.form__input-text{
+  margin-bottom: 10px;
+}
+
+.form__label-box{
+  display: flex;
+}
+
+.form__label + .form__label{
+  margin-left: 23px;
+}
+
+.form__input-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.form__input-radio:checked + .form__bike {
+  display: block;
+}
+
+.form__bike-price{
+  font-size: 32px;
+  position: absolute;
+  top: 0;
+  left: -15%;
+  right: 0;
+  width: 220px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+}
+
+.form__bike-price::after{
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 0;
+  right: 0;
+  width: 220px;
+  height: 100px;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+}
+
+.form__bike{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.form__radio-style{
+  width: 80px;
+  height: 12px;
+  border-radius: 30px;
+}
+
+.form__radio-style--white{
+  background: var(--page-bg);
+  border: 1px solid var(--text-color-muted);
+}
+.form__radio-style--grey{
+  background: var(--text-color-muted);
+}
+.form__radio-style--red{
+  background: var(--accent);
+}

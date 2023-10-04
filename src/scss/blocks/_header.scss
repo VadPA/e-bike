@@ -1,10 +1,32 @@
 .header {
-	background-color: rgb(195, 220, 231);
-	padding: 50px 0;
+	background-color: var(--page-bg);
+	padding: 0 0 50px 0;
 
-	&__row {
+	&__top {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+}
+
+.menu {
+	margin-right: 70px;
+
+	&__list {
+		display: flex;
+	}
+
+	&__item + .menu__item {
+		padding-left: 10px;
+	}
+	&__link {
+		text-transform: uppercase;
+		padding: 42px 20px;
+		transition: all 0.8s;
+	}
+
+	&__link:hover {
+		background-color: var(--page-bg-dark);
+		color: var(--text-color-hover);
 	}
 }
